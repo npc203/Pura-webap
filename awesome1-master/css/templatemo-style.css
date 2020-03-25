@@ -206,8 +206,8 @@ header .social-icon li a
 	{
 		background: url('../images/bottle.jpeg') no-repeat;
 		background-size: cover;
-		padding-top: 20%;
-		padding-bottom: 10%;
+		padding-top: 160px;
+		padding-bottom: 100px;
 		min-height: 650px;
 	}
 #home h1
