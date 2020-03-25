@@ -204,10 +204,10 @@ header .social-icon li a
 /* start home */
 #home
 	{
-		background: url('../images/home-bg.jpg') no-repeat;
+		background: url('../images/bottle.jpeg') no-repeat;
 		background-size: cover;
-		padding-top: 160px;
-		padding-bottom: 100px;
+		padding-top: 20%;
+		padding-bottom: 10%;
 		min-height: 650px;
 	}
 #home h1

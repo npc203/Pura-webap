@@ -116,18 +116,20 @@
     		<div class="container">
     			<div class="row">
     				<div class="col-md-12">
-    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACT <span>Pura Sanitizer</span></h2>
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">ORDER NOW <span>Pura Sanitizer</span></h2>
     				</div>
     				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
     					<form action="#" method="post">
-    						<label>NAME</label>
+    						<label>Name</label>
     						<input name="fullname" type="text" class="form-control" id="fullname">
    						  	
-                            <label>EMAIL</label>
-    						<input name="email" type="email" class="form-control" id="email">
+                            <label>Phone Number</label>
+							<input name="phoneno" type="email" class="form-control" id="email">
+							<label>Quantity: <label id='disp' style="color: bisque;">0</label></label>
+    						<input type="range" id="amount" name="vol" min="5" max="50">
    						  	
-                            <label>MESSAGE</label>
-    						<textarea name="message" rows="4" class="form-control" id="message"></textarea>
+                            <label>Address</label>
+    						<textarea name="address" rows="4" class="form-control" id="message"></textarea>
     						
                             <input type="submit" class="form-control">
     					</form>
@@ -135,10 +137,9 @@
     				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
     					<address>
     						<p class="address-title">OUR ADDRESS</p>
-    						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</span>
+    						<span>BK Pudur, Sugunapuram East, Kuniyamuthur, Tamil Nadu 641008</span>
     						<p><i class="fa fa-phone"></i> 0422 267 8001</p>
     						<p><i class="fa fa-envelope-o"></i> info@skcet.ac.in</p>
-    						<p><i class="fa fa-map-marker"></i> 663 New Walk Roadside, Birdeye View, GO 11020</p>
     					</address>
     					<ul class="social-icon">
     						<li><h4>WE ARE SOCIAL</h4></li>
@@ -270,6 +271,15 @@
             </div>
         </footer>
         <!-- end copyright -->
-
+		<script>
+			var slider = document.getElementById("amount");
+			var output = document.getElementById("disp");
+			output.innerHTML = slider.value; // Display the default slider value
+			// Update the current slider value (each time you drag the slider handle)
+			slider.oninput = function() {
+				console.log(this.value);
+			output.innerHTML = this.value;
+			}
+		</script>
 	</body>
 </html>
